@@ -1,0 +1,293 @@
+.po_items_ho {
+    column-width: 15em;
+    -moz-column-width: 15em;
+    -webkit-column-width: 15em;
+    column-gap: 4rem;
+    -moz-column-gap: 4rem;
+    -webkit-column-gap: 4rem;
+  }
+  
+  .po_item {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem auto;
+    position: relative;
+    background: var(--secondary-color);
+    padding: 6px;
+    border: 10px solid var(--secondary-color);
+    transition: 0.3s ease;
+    font-size: 0;
+    min-height: 300px;
+  }
+  
+  /*Visibilité du libellé*/
+  
+  .view-project-label {
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .view-project-label:hover {
+    background: rgba(255, 255, 255, 1);
+  }
+  
+  .po_item img {
+    max-width: 100%;
+  }
+  
+  .po_item .content {
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: var(--overlay-color);
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      transition: 0.3s ease-in-out;
+      opacity: 0;
+      border: 1px solid black;
+  }
+  
+  /*Titre bouton view project*/
+  .po_item .content {
+      opacity: 0;
+      transition-delay: 1s;
+      transition: 0.3s ease;
+      font-size: 20px;
+  }
+  
+  .po_item:hover {
+      box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25);
+  }
+  
+  .po_item:hover .content {
+      height: calc(100% + 20px);
+      width: calc(100% + 20px);
+      opacity: 1;
+  }
+  
+  .po_item:hover .content {
+      opacity: 1;
+      color: var(--secondary-color);
+  }
+  
+  .po_item .content a {
+      background: var(--bg-color);
+      border: solid 1px var(--text-color);
+      padding: 4px 8px;
+      text-align: center;
+      font-size: 1rem;
+  }
+  
+  .po_item .content a:hover {
+      text-decoration: none;
+  }
+  
+  /*-------------------------------CSS de la modale
+  
+  /* Style de l'overlay (fond flou) */
+  .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Assombrit l'arrière-plan */
+      backdrop-filter: blur(5px); /* Floute l'arrière-plan */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    
+    /* Style de la modale */
+    .modal-content {
+      background: white;
+      width: 70%;
+      height: auto;
+      padding: 20px;
+      border: 1px solid gray;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: relative;
+      max-height: 80vh;
+      overflow-y: auto;
+      overflow-x: hidden;
+      text-align: left;
+  }
+    
+    /* Style du bouton de fermeture */
+    .modal-close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background: none; /* Supprime le fond */
+      color: #555; /* Gris foncé */
+      border: none;
+      font-size: 24px; /* Taille du "X" */
+      font-weight: bold; /* Rend le "X" plus visible */
+      cursor: pointer;
+      padding: 0;
+      transition: color 0.2s ease-in-out;
+  }
+  
+  .modal-close:hover {
+      color: #adadad; /* Légèrement plus clair au survol */
+  }
+    
+    /* Style de l'image */
+    .modal-image {
+      max-width: 80%;
+      max-height: 50%;
+      margin-bottom: 10px;
+    }
+    
+    /* Style du texte */
+    .modal-description {
+      font-size: 18px;
+      color: rgb(158, 34, 34);
+      text-align: left;
+      margin-top: 20px;
+      white-space: normal;
+      word-wrap: break-word;
+      max-width: 90%;
+      line-height: 1.6;
+  }
+    
+  .modal-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  /*Text des paragraphes décrivant le projet dans la modale*/
+  .modal-content p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    letter-spacing: 0.5px;
+  }
+  
+    /* Style du lien */
+    .modal-link {
+      margin-top: 20px;
+      margin-left: 50px;
+      font-size: 16px;
+      color: rgb(156, 156, 156);
+      text-decoration: none;
+    }
+    
+    .modal-description {
+      font-size: 18px;
+      color: black;
+      text-align: center;
+      margin-top: 10px;
+      white-space: normal; /* Assure que le texte s'affiche bien */
+      word-wrap: break-word;
+      max-width: 90%;
+    }
+    
+    /* Animation d’apparition */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Animation de disparition */
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+  }
+  
+  /* Appliquer l’animation à la modale */
+  .modal-content {
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    padding-top: 50px; /* Décale tout le contenu */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligne le contenu en haut */
+  
+    
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  .modal-content img {
+    max-width: 100%;
+    width: auto;
+    max-height: 200px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Ombre douce */
+    border-radius: 8px; /* Coins légèrement arrondis pour un effet plus moderne */
+  }
+  
+  
+  
+  .modal-overlay {
+    display: flex;
+    align-items: center; /* Centre verticalement */
+    justify-content: center; /* Centre horizontalement */
+    overflow: hidden; /* Empêche tout débordement */
+  
+  
+  
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  .json-container {
+    color: rgb(208, 45, 45); /* Assure que le texte est bien visible */
+    background-color: rgb(66, 62, 62); /* Ajoute un fond si nécessaire */
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  [data-theme="dark"] .modal-content {
+    background: #222 !important; /* Gris foncé */
+    color: white !important; /* Texte blanc pour le contraste */
+  }
+  
+  [data-theme="light"] .modal-content {
+    background: white !important; /* Fond blanc en mode clair */
+    color: black !important;
+  }
+  
+  [data-theme="dark"] .modal-description {
+    color: white !important; /* Forcer le texte en blanc */
+  }
+  
+  [data-theme="light"] .modal-description {
+    color: black !important; /* Conserver le texte noir en mode clair */
+  }
