@@ -13,8 +13,34 @@ const introdata = {
         fourth: "Chaque nouveau projet est une occasion d'apprendre, de progresser et de découvrir de nouvelles technologies"
     },
     description: "Développeur web junior tout juste diplômé d'une formation Bac+2 chez OpenClassrooms.",
-    your_img_url: require("./assets/images/Gilou.jpeg"),
+    your_img_url: require("./assets/images/Gil.png"),
 };
+
+const technologies = [{
+    title: "Frontend",
+    description: "Maîtrise des langages essentiels pour la création d’interfaces dynamiques et réactives : HTML, CSS, JavaScript, React, Sass. Capacité à structurer des pages web performantes et ergonomiques en respectant les bonnes pratiques de développement.",
+},
+{
+    title: "Backend",
+    description: "Bases solides en Node.js, Express.js pour construire des API robustes et gérer la logique serveur d’une application web. Compréhension des bases de données avec MongoDB et manipulation des données via des requêtes optimisées.",
+},
+{
+    title: "Intégration & Responsive Design",
+    description: "Utilisation des préprocesseurs et frameworks CSS (Sass) pour garantir un affichage optimal sur tous les écrans. Veille à l’accessibilité et aux performances pour offrir une expérience utilisateur fluide.",
+},
+{
+    title: "Développement Full-Stack avec MERN",
+    description: "Capacité à créer des applications complètes en utilisant MongoDB, Express.js, React et Node.js, en assurant la communication entre le front-end et le back-end de manière efficace.",
+},
+{
+    title: "Versioning & Collaboration",
+    description: "Utilisation de Git & GitHub pour gérer les versions du code et collaborer efficacement avec d’autres développeurs sur des projets en équipe.",
+},
+{
+    title: "Optimisation et Debugging",
+    description: "Débuggage du code avec Chrome DevTools, amélioration des performances et gestion des erreurs.",
+},
+];
 
 const formation = [{
     title: "Développeur Web Full Stack",
@@ -26,6 +52,24 @@ const formation = [{
     description: "IUT Jean Monnet / Roanne"
 }
 
+
+];
+
+const softSkills = [{
+    title: "Communication & Esprit d'équipe",
+    description: "Habitué à collaborer en mode agile, je communique efficacement avec tous les membres d’un projet."
+},
+
+{
+     
+    title: "Autonomie & Rigueur",
+    description: "Je me forme seul et m’adapte rapidement aux nouvelles technologies."
+},
+
+{
+    title: "Organisation",
+    description: "Je planifie, priorise et respecte les délais avec rigueur."
+},
 
 ];
 
@@ -94,6 +138,8 @@ export {
     contactConfig,
     socialprofils,
     logotext,
+    technologies,
     formation,
+    softSkills,
     langues
 };

@@ -6,6 +6,8 @@ import {
   meta,
   langues,
   formation,
+  softSkills,
+  technologies,
 } from "../../content_option";
 
 export const About = () => {
@@ -24,6 +26,22 @@ export const About = () => {
           </Col>
         </Row>
 
+        <Row className="sec_sp">
+          <Col lang="5">
+            <h3 className="color_sec py-4 sous-chapitre-profil">langages et technologies</h3>
+          </Col>
+          <Col lg="17">
+            {technologies.map((data, i) => {
+              return (
+                <div className="service_ py-4" key={i}>
+                  <h5 className="service__title">{data.title}</h5>
+                  <p className="service_desc">{data.description}</p>
+                </div>
+              );
+            })}
+          </Col>
+        </Row>
+
 
         <Row className="sec_sp">
           <Col lang="5">
@@ -31,6 +49,23 @@ export const About = () => {
           </Col>
           <Col lg="17">
             {formation.map((data, i) => {
+              return (
+                <div className="service_ py-4" key={i}>
+                  <h5 className="service__title">{data.title}</h5>
+                  <p className="service_desc">{data.description}</p>
+                </div>
+              );
+            })}
+          </Col>
+        </Row>
+
+
+        <Row className="sec_sp">
+          <Col lang="5">
+            <h3 className="color_sec py-4 sous-chapitre-profil">soft-skills</h3>
+          </Col>
+          <Col lg="17">
+            {softSkills.map((data, i) => {
               return (
                 <div className="service_ py-4" key={i}>
                   <h5 className="service__title">{data.title}</h5>
