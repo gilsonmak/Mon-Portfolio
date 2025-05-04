@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Mon-Portfolio/static/css/main.3603bf3d.css",
+    "main.js": "/Mon-Portfolio/static/js/main.5fa60ab0.js",
+    "static/media/Gil.png": "/Mon-Portfolio/static/media/Gil.04ac2c843988e45de2aa.png",
+    "static/media/Kasa.webp": "/Mon-Portfolio/static/media/Kasa.7e5dd04a47d8caf48ff2.webp",
+    "static/media/NinaCarducci.webp": "/Mon-Portfolio/static/media/NinaCarducci.75180aad647ef735d6ae.webp",
+    "static/media/Booki.webp": "/Mon-Portfolio/static/media/Booki.99f7b492efe1d80b8c09.webp",
+    "static/media/SophieBluel.webp": "/Mon-Portfolio/static/media/SophieBluel.a10360f3f7714e143e30.webp",
+    "index.html": "/Mon-Portfolio/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.3603bf3d.css",
+    "static/js/main.5fa60ab0.js"
+  ]
+}
