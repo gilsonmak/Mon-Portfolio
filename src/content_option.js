@@ -12,7 +12,7 @@ const introdata = {
         third: "Je prends plaisir à concevoir des sites et applications où le design rencontre la performance",
         fourth: "Chaque nouveau projet est une occasion d'apprendre, de progresser et de découvrir de nouvelles technologies"
     },
-    description: "Développeur web junior tout juste diplômé d'une formation Bac+2 chez OpenClassrooms.",
+    description: "Développeur Web Full Stack fraichement diplômé d'une formation Bac+2 chez OpenClassrooms.",
     your_img_url: require("./assets/images/Gil.png"),
 };
 
@@ -113,6 +113,14 @@ const dataportfolio = [
         Technologies: ["React", " SASS"],
 
     },
+
+    {
+        img: require("./assets/images/VieuxGrimoire.webp"),
+        Projet: "Développer le Back-end d'un Site de notation de livres.",
+        Contexte: "Développement du back-end pour une plateforme de notation de livres, collaboration avec un développeur front-end (React), respect des bonnes pratiques de développement et du Green Code. ",
+        Technologies: ["Node.JS", " MongoDB", " Express"],
+    },
+
     
   
 ];
@@ -122,9 +130,9 @@ const contactConfig = {
     YOUR_FONE: "(+33) 6 60 06 60 06",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+    YOUR_SERVICE_ID: process.env.REACT_APP_SERVICE_ID,
+    YOUR_TEMPLATE_ID: process.env.REACT_APP_TEMPLATE_ID,
+    YOUR_USER_ID: process.env.REACT_APP_USER_ID,
 };
 
 const socialprofils = {
