@@ -130,9 +130,9 @@ const contactConfig = {
     YOUR_FONE: "(+33) 6 60 06 60 06",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: process.env.REACT_APP_SERVICE_ID,
-    YOUR_TEMPLATE_ID: process.env.REACT_APP_TEMPLATE_ID,
-    YOUR_USER_ID: process.env.REACT_APP_USER_ID,
+    YOUR_SERVICE_ID: "service_re2zam9",
+    YOUR_TEMPLATE_ID: "template_se2dezm",
+    YOUR_USER_ID: "MIVS9RpSEQHfrRN96",
 };
 
 const socialprofils = {
