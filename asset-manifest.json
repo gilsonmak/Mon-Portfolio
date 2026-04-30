@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Mon-Portfolio/static/css/main.3603bf3d.css",
-    "main.js": "/Mon-Portfolio/static/js/main.f5eb53d8.js",
+    "main.js": "/Mon-Portfolio/static/js/main.12fb80d7.js",
     "static/media/VieuxGrimoire.webp": "/Mon-Portfolio/static/media/VieuxGrimoire.0ad3d6841a42f69c2b33.webp",
     "static/media/Gil.png": "/Mon-Portfolio/static/media/Gil.04ac2c843988e45de2aa.png",
     "static/media/Kasa.webp": "/Mon-Portfolio/static/media/Kasa.7e5dd04a47d8caf48ff2.webp",
@@ -12,6 +12,6 @@
   },
   "entrypoints": [
     "static/css/main.3603bf3d.css",
-    "static/js/main.f5eb53d8.js"
+    "static/js/main.12fb80d7.js"
   ]
 }
