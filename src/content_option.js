@@ -13,7 +13,7 @@ const introdata = {
         fourth: "Chaque nouveau projet est une occasion d'apprendre, de progresser et de découvrir de nouvelles technologies"
     },
     description: "Développeur Web Full Stack fraichement diplômé d'une formation Bac+2 chez OpenClassrooms.",
-    your_img_url: require("./assets/images/Gil.png"),
+    your_img_url: require("./assets/images/Photo_Gilou.jpeg"),
 };
 
 const technologies = [{
